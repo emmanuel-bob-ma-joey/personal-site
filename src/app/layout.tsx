@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Emmanuel Ma",
-  description: "Portfolio Website",
+  description: "Personal Website",
 };
 
 export default function RootLayout({
@@ -19,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className={styles.description}>
-          <Link href="/">Emmanuel Ma</Link>
-        </div>
+        {/* <div className={styles.description}> */}
+        {/* <Link href="/">Emmanuel Ma</Link> */}
+        {/* </div> */}
         <Providers>{children}</Providers>
       </body>
     </html>

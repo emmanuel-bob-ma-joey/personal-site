@@ -11,6 +11,7 @@ export default function Home() {
       <div className={styles.description}>
         <Text>
           <Link
+            textDecoration={"underline"}
             className={styles.inline}
             href="/Abstract_Interpretation.pdf"
             isExternal
@@ -20,6 +21,7 @@ export default function Home() {
           - A brief introductory paper on Abstract Interpretation; a static
           analysis method for formal verification. Written in collaboration with{" "}
           <Link
+            textDecoration={"underline"}
             className={styles.inline}
             href="https://www.linkedin.com/in/belle-c-pan/"
             isExternal
@@ -31,40 +33,23 @@ export default function Home() {
       <div className={styles.description}>
         <Text>
           <Link
+            textDecoration={"underline"}
             className={styles.inline}
-            href="/Abstract_Interpretation.pdf"
+            href="/Connect4.pdf"
             isExternal
           >
-            Introduction to Abstract Interpretation
+            Reinforcement Learning on Connect4
           </Link>{" "}
-          - A brief introductory paper on Abstract Interpretation; a static
-          analysis method for formal verification. Written in collaboration with{" "}
+          - Compared the performance of various reinforcement learning and tree
+          search algorithms against a random policy connect 4 agent. Written in
+          collaboration with{" "}
           <Link
+            textDecoration={"underline"}
             className={styles.inline}
-            href="https://www.linkedin.com/in/belle-c-pan/"
+            href="https://ca.linkedin.com/in/yizhe-zhao-bb6a1222b"
             isExternal
           >
-            Belle Pan.
-          </Link>
-        </Text>
-      </div>
-      <div className={styles.description}>
-        <Text>
-          <Link
-            className={styles.inline}
-            href="/Abstract_Interpretation.pdf"
-            isExternal
-          >
-            Introduction to Abstract Interpretation
-          </Link>{" "}
-          - A brief introductory paper on Abstract Interpretation; a static
-          analysis method for formal verification. Written in collaboration with{" "}
-          <Link
-            className={styles.inline}
-            href="https://www.linkedin.com/in/belle-c-pan/"
-            isExternal
-          >
-            Belle Pan.
+            Yi Zhe Zhao.
           </Link>
         </Text>
       </div>
