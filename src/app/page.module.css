@@ -6,6 +6,15 @@
   padding: 6rem;
   min-height: 100vh;
 }
+.poop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* justify-content: center; */
+  align-items: center;
+  justify-self: last baseline;
+  position: inherit;
+}
 
 .description {
   display: inherit;
@@ -44,6 +53,17 @@
   grid-template-columns: repeat(4, minmax(25%, auto));
   width: var(--max-width);
   max-width: 100%;
+}
+.cardgrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(33%, auto));
+  width: var(--max-width);
+  max-width: 100%;
+}
+.projectcard {
+  background-color: black;
+  color: rgb(15, 209, 66);
+  margin: "1em";
 }
 
 .card {
