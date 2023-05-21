@@ -5,9 +5,11 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  font-family: var(--font-mono);
 }
 .poop {
   display: flex;
+  padding: 6rem;
   flex-direction: column;
   justify-content: space-between;
   /* justify-content: center; */

@@ -11,6 +11,7 @@ import { flushSync } from "react-dom";
 import React from "react";
 import Notes from "../components/Notes";
 import Projects from "../components/Projects";
+import Fun from "../components/Fun";
 
 export default function Home() {
   const { isOpen, onToggle } = useDisclosure();
@@ -177,8 +178,9 @@ export default function Home() {
       </Link> */}
       </main>
       <div id="secondary" className={styles.main}>
+        <Fun></Fun>
         {/* <Notes></Notes> */}
-        <Projects></Projects>
+        {/* <Projects></Projects> */}
       </div>
     </div>
   );
