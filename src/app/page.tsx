@@ -3,7 +3,14 @@
 import styles from "./page.module.css";
 
 // import { Link } from "@chakra-ui/next-js";
-import { Box, Button, Collapse, Image, useDisclosure } from "@chakra-ui/react";
+import {
+  background,
+  Box,
+  Button,
+  Collapse,
+  Image,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { Link } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { useEffect, useRef } from "react";
@@ -97,16 +104,49 @@ export default function Home() {
           src="/panda2.jpeg"
           alt="Emmanuel Ma"
         />
+        <div className={styles.description}>
+          <Link
+            // className={styles.description}
+            href="https://github.com/emmanuel-bob-ma-joey"
+            target="_blank"
+          >
+            <Image
+              src="/github-icon.png"
+              style={{ width: "3em", height: "3em" }}
+            ></Image>
+          </Link>
+          <Link
+            // className={styles.description}
+            href="https://www.linkedin.com/in/emmanuel-ma-5092261a5/"
+            target="_blank"
+          >
+            <Image
+              src="/linkedin.png"
+              style={{ width: "3em", height: "3em" }}
+            ></Image>
+          </Link>
+          <Link
+            // className={styles.description}
+            href="/resume.pdf"
+            target="_blank"
+          >
+            <Image
+              src="/document3.png"
+              style={{ width: "3em", height: "3em" }}
+            ></Image>
+          </Link>
+        </div>
 
         <div className={styles.description}>
           <div>
             <p>
               Hi, I'm Emmanuel! I'm a 3rd year software engineering student
-              @McGill with a minor in philosophy. Currently I am interning at
-              Automatic Data Processing and during the school year I am a
-              helpdesk tutor for CSUS McGill. In my free time I enjoy running,
-              competing for the McGill Poker team, playing table tennis, and
-              practicing piano or violin.
+              @McGill with a minor in philosophy, currently interning at
+              Automatic Data Processing. During the school year I am a helpdesk
+              tutor for CSUS McGill and workshop lead for the competitive
+              programming club. In my free time I enjoy running, competing for
+              the McGill Poker team, playing table tennis, and practicing piano
+              or violin.
             </p>
           </div>
         </div>
@@ -178,7 +218,7 @@ export default function Home() {
       </Link> */}
       </main>
       <div id="secondary" className={styles.main}>
-        <Fun></Fun>
+        {/* <Fun></Fun> */}
         {/* <Notes></Notes> */}
         {/* <Projects></Projects> */}
       </div>

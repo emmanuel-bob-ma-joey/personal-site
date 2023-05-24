@@ -19,7 +19,7 @@ const Fun = () => {
           >
             Destenay, trio in b minor for piano, oboe and clarinet, op.27
           </Link>{" "}
-          - Oboist: Tommy He && Clarinetist: Jihoon Jeon
+          - Oboist: Tommy He, Clarinetist: Jihoon Jeon
         </Text>
         <Text>
           <Link
@@ -30,7 +30,7 @@ const Fun = () => {
           >
             Khachaturian - Trio for Violin, Clarinet and Piano
           </Link>{" "}
-          - Clarinetist: Jihoon Jeon && Violinist: Zaian
+          - Clarinetist: Jihoon Jeon, Violinist: Zein Nakhleh
         </Text>
         <Text>
           <Link
@@ -81,6 +81,10 @@ const Fun = () => {
         </Text>
         <Text>Rachmaninoff - Moments musicaux Op.16 No.4</Text>
         <Text>Mendelssohn - Rondo Capriccioso in E, Op.14</Text>
+        <Text>Chopin - Étude Op. 10, No. 12 </Text>
+        <Text>
+          Beethoven - Sonata No. 23 Op. 57 (Appassionata) 3rd Movement
+        </Text>
       </div>
     </div>
   );
