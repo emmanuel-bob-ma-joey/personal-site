@@ -104,35 +104,46 @@ export default function Home() {
           src="/panda2.jpeg"
           alt="Emmanuel Ma"
         />
-        <div className={styles.description}>
+        <div className={styles.icon}>
           <Link
             // className={styles.description}
             href="https://github.com/emmanuel-bob-ma-joey"
             target="_blank"
+            className={styles.bounce + " " + styles.child}
           >
             <Image
               src="/github-icon.png"
-              style={{ width: "3em", height: "3em" }}
+              style={{ width: "2.5em", height: "2.5em" }}
             ></Image>
           </Link>
           <Link
             // className={styles.description}
             href="https://www.linkedin.com/in/emmanuel-ma-5092261a5/"
             target="_blank"
+            className={styles.bounce + " " + styles.child}
+            style={{
+              animationDuration: "2",
+              animationIterationCount: "infinite",
+              transformOrigin: "bottom",
+            }}
           >
             <Image
               src="/linkedin.png"
-              style={{ width: "3em", height: "3em" }}
+              style={{
+                width: "2.5em",
+                height: "2.5em",
+              }}
             ></Image>
           </Link>
           <Link
             // className={styles.description}
             href="/resume.pdf"
             target="_blank"
+            className={styles.bounce + " " + styles.child}
           >
             <Image
               src="/document3.png"
-              style={{ width: "3em", height: "3em" }}
+              style={{ width: "2.5em", height: "2.5em" }}
             ></Image>
           </Link>
         </div>
@@ -218,9 +229,9 @@ export default function Home() {
       </Link> */}
       </main>
       <div id="secondary" className={styles.main}>
-        {/* <Fun></Fun> */}
-        {/* <Notes></Notes> */}
-        {/* <Projects></Projects> */}
+        {/* <Fun></Fun>*/}
+        <Notes></Notes>
+        <Projects></Projects>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ const Projects = () => {
       </div>
       <div className={styles.code}>
         <div className={styles.cardgrid}>
-          <Card className={styles.projectcard} maxW="sm">
+          <Card className={styles.projectcard}>
             <CardBody>
               <Image src="/signlingo.jpeg" alt="Signlingo" borderRadius="lg" />
               <Stack mt="6" spacing="3">
@@ -47,13 +47,25 @@ const Projects = () => {
 
             <CardFooter>
               <ButtonGroup spacing="2">
-                <Button variant="solid" colorScheme="blue">
+                <Button
+                  variant="solid"
+                  colorScheme="blue"
+                  className={styles.cardbutton}
+                >
                   Python
                 </Button>
-                <Button variant="solid" colorScheme="blue">
+                <Button
+                  variant="solid"
+                  colorScheme="blue"
+                  className={styles.cardbutton}
+                >
                   OpenCV
                 </Button>
-                <Button variant="solid" colorScheme="blue">
+                <Button
+                  variant="solid"
+                  colorScheme="blue"
+                  className={styles.cardbutton}
+                >
                   TKinter
                 </Button>
               </ButtonGroup>
@@ -61,14 +73,14 @@ const Projects = () => {
             <Divider />
           </Card>
 
-          <Card maxW="sm" className={styles.projectcard}>
+          <Card className={styles.projectcard}>
             <CardBody>
               <Image
                 src="/finance.png"
                 alt="Finance Dashboard"
                 borderRadius="lg"
               />
-              <Stack mt="6" spacing="3">
+              <Stack mt="6" spacing="1">
                 <Heading size="md">Finance Dashboard</Heading>
                 <Text>
                   A responsive fullstack app allowing users to view market
@@ -88,17 +100,37 @@ const Projects = () => {
             </CardBody>
 
             <CardFooter>
-              <ButtonGroup className={styles.grid} spacing="1">
-                <Button variant="solid" colorScheme="blue">
+              <ButtonGroup
+                className={styles.grid}
+                style={{ display: "flow-root" }}
+                spacing="1"
+              >
+                <Button
+                  variant="solid"
+                  className={styles.cardbutton}
+                  colorScheme="blue"
+                >
                   React
                 </Button>
-                <Button variant="solid" colorScheme="blue">
+                <Button
+                  variant="solid"
+                  colorScheme="blue"
+                  className={styles.cardbutton}
+                >
                   MongoDB
                 </Button>
-                <Button variant="solid" colorScheme="blue">
+                <Button
+                  variant="solid"
+                  colorScheme="blue"
+                  className={styles.cardbutton}
+                >
                   Tailwind
                 </Button>
-                <Button variant="solid" colorScheme="blue">
+                <Button
+                  variant="solid"
+                  colorScheme="blue"
+                  className={styles.cardbutton}
+                >
                   ALphaVantage API
                 </Button>
               </ButtonGroup>
@@ -106,37 +138,38 @@ const Projects = () => {
             <Divider />
           </Card>
 
-          <Card className={styles.projectcard} maxW="sm">
-            <CardBody className={styles.poop}>
+          <Card className={styles.projectcard}>
+            <CardBody className={styles.cardBody}>
               <Image
                 src="/C.png"
-                alt="Finance Dashboard"
+                alt="mini-c compiler"
                 borderRadius="lg"
                 height={"15em"}
-                justifySelf={"flex-start"}
               />
-              <Stack mt="6" spacing="3">
+              <Stack mt="3" spacing="3">
                 <Heading size="md">Mini-C Compiler</Heading>
                 <Text>
                   A compiler for a mini-c language with mips assembly as the
                   target language. Semester long project for a compiler design
                   course (COMP520).
                 </Text>
-                <Link className={styles.poop} href="example.com">
-                  <Image
-                    src="/github-icon.png"
-                    style={{ width: "2em", height: "2em" }}
-                  ></Image>
-                </Link>
               </Stack>
             </CardBody>
 
             <CardFooter>
               <ButtonGroup spacing="1">
-                <Button variant="solid" colorScheme="blue">
+                <Button
+                  variant="solid"
+                  colorScheme="blue"
+                  className={styles.cardbutton}
+                >
                   Java
                 </Button>
-                <Button variant="solid" colorScheme="blue">
+                <Button
+                  variant="solid"
+                  colorScheme="blue"
+                  className={styles.cardbutton}
+                >
                   Mips Assembly
                 </Button>
               </ButtonGroup>
@@ -144,7 +177,7 @@ const Projects = () => {
             <Divider />
           </Card>
           <Card className={styles.projectcard} maxW="sm">
-            <CardBody>
+            <CardBody className={styles.cardBody}>
               <Image
                 src="/positive_news.png"
                 alt="positive news web scraper"
@@ -179,16 +212,29 @@ const Projects = () => {
                   //className={styles.poop}
                   variant="solid"
                   colorScheme="blue"
+                  className={styles.cardbutton}
                 >
                   Flask
                 </Button>
-                <Button variant="solid" colorScheme="blue">
+                <Button
+                  variant="solid"
+                  colorScheme="blue"
+                  className={styles.cardbutton}
+                >
                   Vue
                 </Button>
-                <Button variant="solid" colorScheme="blue">
+                <Button
+                  variant="solid"
+                  colorScheme="blue"
+                  className={styles.cardbutton}
+                >
                   SQL
                 </Button>
-                <Button variant="solid" colorScheme="blue">
+                <Button
+                  variant="solid"
+                  colorScheme="blue"
+                  className={styles.cardbutton}
+                >
                   Newspaper
                 </Button>
               </ButtonGroup>
@@ -196,7 +242,7 @@ const Projects = () => {
             <Divider />
           </Card>
           <Card className={styles.projectcard} maxW="sm">
-            <CardBody>
+            <CardBody className={styles.cardBody}>
               <Image
                 src="/shinzy.png"
                 alt="positive news web scraper"
@@ -231,13 +277,22 @@ const Projects = () => {
                   //className={styles.poop}
                   variant="solid"
                   colorScheme="blue"
+                  className={styles.cardbutton}
                 >
                   Flask
                 </Button>
-                <Button variant="solid" colorScheme="blue">
+                <Button
+                  variant="solid"
+                  colorScheme="blue"
+                  className={styles.cardbutton}
+                >
                   Torch
                 </Button>
-                <Button variant="solid" colorScheme="blue">
+                <Button
+                  variant="solid"
+                  colorScheme="blue"
+                  className={styles.cardbutton}
+                >
                   Bootstrap
                 </Button>
               </ButtonGroup>
