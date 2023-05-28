@@ -19,82 +19,28 @@ import React from "react";
 import Notes from "../components/Notes";
 import Projects from "../components/Projects";
 import Fun from "../components/Fun";
+import Recommendations from "../components/Recommendations";
 
 export default function Home() {
-  const { isOpen, onToggle } = useDisclosure();
-  const [showNotes, setShowNotes] = React.useState(false);
-  const [showProjects, setShowProjects] = React.useState(false);
+  const [pageState, setPageState] = React.useState(0);
 
   function delay() {
     return new Promise((resolve) => setTimeout(resolve, 300));
   }
 
-  const closeSecondaryScreen = () => {
-    var x = document.getElementById("secondary");
-    if (x) {
-      x.style.display = "none";
+  useEffect(() => {
+    // This effect uses the `value` variable,
+    // so it "depends on" `value`.
+    console.log("useeffect has been called");
+    console.log("page state is", pageState);
+    const element = document.getElementById("secondary");
+    console.log(element);
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }, [pageState]); // pass `value` as a dependency
 
-  const openSecondaryScreen = () => {
-    var x = document.getElementById("secondary");
-    if (x) {
-      x.style.display = "block";
-    }
-  };
-
-  const scrollNotes = () => {
-    var x = document.getElementById("notes");
-    if (x) {
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-
-    //onToggle();
-    setShowNotes(!showNotes);
-    if (showNotes) {
-      openSecondaryScreen();
-    } else if (!showNotes && !showProjects) {
-      closeSecondaryScreen();
-    }
-    delay().then(() => {
-      console.log("delayed 0.3 sec");
-      const element = document.getElementById("notesCollapse");
-      console.log(element);
-      if (element) {
-        // 👇 Will scroll smoothly to the top of the next section
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    });
-  };
-
-  const scrollProjects = () => {
-    if (showNotes) {
-      setShowNotes(!showNotes);
-    }
-    var x = document.getElementById("projects");
-    if (x) {
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-
-    setShowProjects(!showProjects);
-    delay().then(() => {
-      console.log("delayed 0.3 sec");
-      const element = document.getElementById("projectsCollapse");
-      console.log(element);
-      if (element) {
-        // 👇 Will scroll smoothly to the top of the next section
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    });
-  };
   return (
     <div>
       <main className={styles.main}>
@@ -164,7 +110,8 @@ export default function Home() {
 
         <div className={styles.grid}>
           <Link
-            onClick={scrollNotes}
+            // onClick={scrollNotes}
+            onClick={() => setPageState(1)}
             // href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             className={styles.card + ""}
             //target="_self"
@@ -174,13 +121,14 @@ export default function Home() {
               <h2>
                 Song Recs <span>-&gt;</span>
               </h2>
-              <p>Find in-depth information about Next.js features and API.</p>
+              <p>You are compelled to click here.</p>
             </div>
           </Link>
 
           <Link
             // href="/notes"
-            onClick={scrollNotes}
+            // onClick={scrollNotes}
+            onClick={() => setPageState(2)}
             className={styles.card}
             target="_self"
             rel="noopener noreferrer"
@@ -198,7 +146,8 @@ export default function Home() {
 
           <Link
             // href="/projects"
-            onClick={scrollProjects}
+            // onClick={scrollProjects}
+            onClick={() => setPageState(3)}
             className={styles.card}
             target="_self"
             rel="noopener noreferrer"
@@ -210,29 +159,44 @@ export default function Home() {
               <p>Check out what I've built!</p>
             </div>
           </Link>
-          <a
-            href="/fun"
+          <Link
+            // href="/fun"
             className={styles.card}
             target="_self"
             rel="noopener noreferrer"
+            onClick={() => setPageState(4)}
           >
             <div className={styles.code}>
               <h2>
                 Fun <span>-&gt;</span>
               </h2>
-              <p>Some stuff that I like to do for fun.</p>
+              <p>Stuff I like to do for fun.</p>
             </div>
-          </a>
+          </Link>
         </div>
         {/* <Link href="/about" color="blue.400" _hover={{ color: "blue.500" }}>
         About
       </Link> */}
       </main>
-      <div id="secondary" className={styles.main}>
-        {/* <Fun></Fun>*/}
-        <Notes></Notes>
-        <Projects></Projects>
-      </div>
+
+      {/* <Fun></Fun>*/}
+      {pageState == 1 ? (
+        <div id="secondary" className={styles.main}>
+          <Recommendations></Recommendations>
+        </div>
+      ) : pageState == 2 ? (
+        <div id="secondary" className={styles.main}>
+          <Notes></Notes>
+        </div>
+      ) : pageState == 3 ? (
+        <div id="secondary" className={styles.main}>
+          <Projects></Projects>
+        </div>
+      ) : pageState == 4 ? (
+        <div id="secondary" className={styles.main}>
+          <Fun></Fun>
+        </div>
+      ) : null}
     </div>
   );
 }

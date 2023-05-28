@@ -32,7 +32,7 @@ const Projects = () => {
               <Stack mt="6" spacing="3">
                 <Heading size="md">Signlingo</Heading>
                 <Text>
-                  A webapp that helps you learn American Sign Language. Award
+                  An application to help you learn American Sign Language. Award
                   winning project @McHacks 10.
                 </Text>
 
