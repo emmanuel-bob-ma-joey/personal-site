@@ -28,7 +28,8 @@ const Fun = () => {
         <Link
           textDecoration={"underline"}
           className={styles.inline}
-          href="/Mvt-3.wav"
+          href="/Mvt-1.wav"
+          target="_blank"
           isExternal
         >
           1st Movement
@@ -37,6 +38,7 @@ const Fun = () => {
           textDecoration={"underline"}
           className={styles.inline}
           href="/Mvt-3.wav"
+          target="_blank"
           isExternal
         >
           3rd Movement
