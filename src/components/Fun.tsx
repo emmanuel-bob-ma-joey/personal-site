@@ -28,7 +28,7 @@ const Fun = () => {
         <Link
           textDecoration={"underline"}
           className={styles.inline}
-          href="/Mvt-1.wav"
+          href="/audio/mvmt1"
           target="_blank"
           isExternal
         >
@@ -37,7 +37,7 @@ const Fun = () => {
         <Link
           textDecoration={"underline"}
           className={styles.inline}
-          href="/Mvt-3.wav"
+          href="/audio/mvmt3"
           target="_blank"
           isExternal
         >
