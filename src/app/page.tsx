@@ -95,37 +95,35 @@ export default function Home() {
         </div>
 
         <div className={styles.description}>
-          <div>
-            <p>
-              Hi, I'm Emmanuel! I'm a 3rd year software engineering student
-              @McGill with a minor in philosophy, currently interning at
-              Automatic Data Processing (ADP). During the school year I am a{" "}
-              <Link
-                href="https://mcgill-csus.ca/helpdesk"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                helpdesk tutor
-              </Link>{" "}
-              for CSUS McGill and workshop lead for the{" "}
-              <Link
-                href="https://competemcgill.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                competitive programming club
-              </Link>
-              . In my free time I enjoy running, competing for the{" "}
-              <Link
-                href="https://pokeripa.com/teams/mcgill-university-2022-2023/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                McGill Poker team
-              </Link>
-              , playing table tennis, and practicing piano or violin.
-            </p>
-          </div>
+          <p>
+            Hi, I'm Emmanuel! I'm a 3rd year software engineering student
+            @McGill with a minor in philosophy, currently interning at Automatic
+            Data Processing (ADP). During the school year I am a{" "}
+            <Link
+              href="https://mcgill-csus.ca/helpdesk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              helpdesk tutor
+            </Link>{" "}
+            for CSUS McGill and workshop lead for the{" "}
+            <Link
+              href="https://competemcgill.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              competitive programming club
+            </Link>
+            . In my free time I enjoy running, competing for the{" "}
+            <Link
+              href="https://pokeripa.com/teams/mcgill-university-2022-2023/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              McGill Poker team
+            </Link>
+            , playing table tennis, and practicing piano or violin.
+          </p>
         </div>
 
         <div className={styles.grid}>

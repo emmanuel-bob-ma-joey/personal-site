@@ -57,10 +57,10 @@ const Fun = () => {
         </Text>
       </div>
       <div style={{ paddingTop: "6em" }}>
-        <h3>Piano solo</h3>
+        <h3 style={{ paddingBottom: "6em" }}>Piano solo</h3>
       </div>
 
-      <div className={styles.poop} style={{ padding: "6em" }}>
+      <div className={styles.poop}>
         <Text>
           Beethoven - Sonata No. 23 Op. 57 (Appassionata) 3rd Movement
         </Text>
