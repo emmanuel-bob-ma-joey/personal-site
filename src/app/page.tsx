@@ -146,8 +146,6 @@ export default function Home() {
           </Link> */}
 
           <Link
-            // href="/notes"
-            // onClick={scrollNotes}
             onClick={() => setPageState(2)}
             className={styles.card}
             target="_self"
@@ -165,8 +163,6 @@ export default function Home() {
           </Link>
 
           <Link
-            // href="/projects"
-            // onClick={scrollProjects}
             onClick={() => setPageState(3)}
             className={styles.card}
             target="_self"
@@ -180,7 +176,6 @@ export default function Home() {
             </div>
           </Link>
           <Link
-            // href="/fun"
             className={styles.card}
             target="_self"
             rel="noopener noreferrer"
@@ -199,7 +194,6 @@ export default function Home() {
       </Link> */}
       </main>
 
-      {/* <Fun></Fun>*/}
       {pageState == 1 ? (
         <div id="secondary" className={styles.main}>
           <Recommendations></Recommendations>
